@@ -3,16 +3,17 @@
   <form method="POST">
     {% csrf_token %}
     <fieldset class="form-group">
-      <legend class="border-bottom mb-4">Join Today</legend>
+      <legend class="border-bottom mb-4">Log In</legend>
       {{form|crispy}}
     </fieldset>
     <div class="form-group">
-      <button class="btn btn-outline-primary">Sign Up</button>
+      <button class="btn btn-outline-primary">Login</button>
     </div>
   </form>
   <div class="border-top pt-3">
     <small class="text-muted"
-      >Already have an account? <a href="{% url 'login' %}" class="ml-2">Sign In</a></small
+      >Don't have an account?
+      <a href="{% url 'register' %}" class="ml-2">Sign Up Now</a></small
     >
   </div>
 </div>
